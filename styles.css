@@ -1,0 +1,291 @@
+/* DEFAULTS */
+
+header, footer {
+    display: block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+    background-color: #000000;
+}
+
+.firstContainer{
+    width: 100%;
+    margin: auto;
+    padding-top: 1%;
+    height: 300px;
+    padding: 0;
+    display: flex;
+}
+
+.secondContainer{
+    width: 100%;
+    margin: auto;
+    padding-top: 1%;
+    height: auto;
+    padding: 0;
+    display: flex;
+}
+
+.thirdContainer{
+    width: 100%;
+    margin: auto;
+    padding-top: 1%;
+    height: 100px;
+    padding: 0;
+    display: flex;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+
+.col-1 {width: 8.33% }
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+* {
+    box-sizing: border-box;
+}
+
+div.moreProjectsContainer{
+    display: flex;
+    max-width: 420px;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    
+}
+
+.moreProjectsButton{
+    background-color: aqua;
+    border: none;
+    font-size: 17px;
+    padding: 12px;
+    width: 420px;
+    font-family: 'Alata';
+    
+}
+
+.moreProjectsButton:hover{
+    background-color: chartreuse;
+}
+
+/* SOCIALS CONTAINER */
+
+div.socialsContainer{
+    display: flex;
+    align-items: center;
+    max-width: 420px;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    
+}
+
+
+/* CUSTOM STYLES */
+
+#firstsection{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(66, 174, 219,1) 100%);
+}
+
+.middleColumn{
+    display: block;
+    text-align: center;
+}
+
+div.circularImage{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1.name{
+    color: ghostwhite;
+    font-size: 50px;
+    font-family: 'Mukta Malar';
+    font-style: italic;
+    margin: 0;
+}
+
+h2.title{
+    font-size: 24px;
+    font-family: 'Crimson Text';
+    margin:0;
+}
+
+p.text{
+    font-size: 20px;
+    font-family: 'Alata';
+/*    margin: 5px;*/
+/*    color: azure;*/
+    
+}
+
+p.smallText{
+    font-size: 17px;
+    font-family: 'Alata';
+}
+
+h1.titleLinks{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Mukta Malar';
+    font-style:oblique;
+}
+
+a.linksCont{
+/*    text-decoration: none;*/
+    color: black;
+}
+
+h2.links{
+    font-family: 'Crimson Text';
+    margin: 0;
+}
+
+img.icon{
+    max-width: 60px;
+    max-height: 60px;
+    margin: none;
+}
+
+img.socialIcon{
+    max-width: 75px;
+    max-height: 75px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 60%;
+}
+
+img.socialIcon:hover{
+    box-shadow: 0px 0px 10px 10px #0ff;
+}
+
+/* HOVER MENU */
+
+.dropButton{
+    background-color: azure;
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Mukta Malar';
+/*    font-style: italic;*/
+    border: none;
+    border-radius: 5%;
+    }
+
+.dropDown-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 420px;
+  margin: 0 auto;
+  position: relative;
+}
+.dropDown-content{
+    display: none;
+    position: absolute;
+    background-color: beige;
+    top: 110%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+    }
+
+.dropDown-content b{
+/*    color: white;*/
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+    }
+
+.dropDown:hover .dropDown-content{
+    display: block;
+    
+    }
+
+.dropDown:hover .dropButton{
+    background-color:cornflowerblue;
+    color: beige;
+    
+    }
+
+a.linksCont:hover{
+    color: deeppink;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer.footsy{
+    background-color: azure;
+    /*padding-left: 10%; */
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+}
+
+            /*MOBILE*/
+/*previously set to 680px*/
+@media screen and (max-width: 1400px) {
+    p.text, p.smallText{
+        font-size: 15px;
+    }
+    
+    img.icon{
+        max-height: 40px;
+        max-width: 40px;
+    }
+    
+    h2.title, a.links{
+        font-size: 20px;
+    }
+    col-4,col-12{
+        width: 100%;
+        margin: 0;
+    }
+    footer.footsy{
+    background-color: azure;
+    /*padding-left: 10%; */
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 75px;
+    width: 100%;
+}
+}
+@media screen and (max-width: 680px){
+    
+}
